@@ -1,0 +1,160 @@
+{{!< default}}
+<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+            <h1 class="blog-title">{{@blog.title}}</h1>
+            <h2 class="blog-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <div class="social-nav">
+        <ul>
+            <li> <a class="social-icon" href="https://twitter.com/VanessaR_C" data-type="Twitter" data-icon="&#xe600;"> <span class="visually-hidden">Twitter</span> </a></li>
+            <li> <a class="social-icon" href="https://dribbble.com/vanessarc" data-tyep="Dribbble" data-icon="&#xe601;"> <span class="visually-hidden"> Dribbble </span></a></li>
+            <li> <a class="social-icon" href="https://www.linkedin.com/in/vanessa87" data-type="Linkedin" data-icon="&#xe602;"> <span class="visually-hidden">Linkedin </span></a></li>
+            <li><a class="social-icon" href="http://www.pinterest.com/vanessarbd/" data-type="Pinterest" data-icon="&#xe603;"> <span class="visually-hidden">Pinterest</span></a></li>
+        </ul>
+    </div>
+       <section>
+         <nav>
+           <div class="navicon">&#9776;</div>
+           <div class="container">
+             <div class="nav-items"><a href="http://vanessarc.ghost.io/">Articles</a></div>
+             <div class="nav-items"><a href="http://vanessarc.ghost.io/portfolio/">My Work</a></div>
+           </div>
+         </nav>
+      </section>
+</header>
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<main class="content" role="main">
+
+    <article class="{{post_class}}">
+
+        {{#post}}
+
+            <div class='cv-container'>
+              <h3>
+                Projects
+              </h3>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2014 - present
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    Head of Design
+                  </p>
+                  <p class="position">
+                    Web Design - UI development - App design (iOS, Android)
+                  </p>
+                  <p class="company">
+                    <a href="/">Comcarde - Bridge</a>
+                  </p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2013 - 2014
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    Web Design - UI development
+                  </p>
+                  <p class="company">
+                    <a href="/">Sitekit</a>
+                  </p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2012 - 2014
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    Web Design - Web development
+                  </p>
+                  <p class="company">
+                    <a href="/">Warrominc</a>
+                  </p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2011 - 2012
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    Web App Design
+                  </p>
+                  <p class="company">
+                    <a href="/">Yworld</a>
+                  </p>
+                </div>
+              </div>
+
+              <h3>
+            Articles
+            </h3>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2016
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    User centered Design vs Task centered Design
+                  </p>
+                  <p class="company">
+                    <a href="/">The Digest</a>
+                  </p>
+                </div>
+              </div>
+              <div class="container">
+                <div class="date">
+                  <p>
+                    2016
+                  </p>
+                </div>
+                <div class="title">
+                  <p class="position">
+                    Png Gif Jpeg what´s the difference??
+                  </p>
+                  <p class="company">
+                    <a href="/">The Digest</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-container">
+                <h3 class="title">
+                  Portfolio
+                </h3>
+                <img src="http://placehold.it/350x150" class="p-images" />
+                <img src="http://placehold.it/350x150"
+                     class="p-images"/>
+                <img src="http://placehold.it/350x150"
+                     class="p-images"/>
+
+                <img src="http://placehold.it/350x150" class="p-images" />
+                <img src="http://placehold.it/350x150"
+                     class="p-images"/>
+                <img src="http://placehold.it/350x150"
+                     class="p-images"/>
+              </div>
+
+        {{/post}}
+
+    </article>
+
+</main>
